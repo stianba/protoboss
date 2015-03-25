@@ -1,10 +1,10 @@
 {
-  "name": "nybygg",
-  "version": "1.0.0",
+  "name": "protoboss",
+  "version": "0.0.1",
   "authors": [
     "Stian Bakkane <stianba@gmail.com>"
   ],
-  "description": "Elko Nybygg-katalog",
+  "description": "Create interactive prototypes with Grunt, Bower, Sass, Jade, CoffeeScript, and Foundation. Phew.",
   "license": "MIT",
   "private": true,
   "ignore": [
