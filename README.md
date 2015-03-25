@@ -1,5 +1,5 @@
 # protoboss
-Create interactive prototypes with Grunt, Bower, Sass, Jade, CoffeeScript, and Foundation. Phew.
+Create interactive prototypes with [Grunt](http://gruntjs.com/), [Bower](http://bower.io/), [Sass](http://sass-lang.com/), [Jade](http://jade-lang.com/), [CoffeeScript](http://coffeescript.org/), and [Foundation](http://foundation.zurb.com/). Phew.
 
 ## Install
 ```
