@@ -91,7 +91,7 @@ module.exports = (grunt) ->
         files: [{
           expand: true
           cwd: 'app'
-          src: ['*.html']
+          src: ['*.html', 'assets/**/*.*']
           dest: 'dist/'
         }
         {
