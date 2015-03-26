@@ -18,4 +18,3 @@ Publish the prototype with Grunt.
 ```
 $ grunt publish
 ```
-**Note:** Publishing has certain issues with Font-Awesome. I'll look into it, I guess.
