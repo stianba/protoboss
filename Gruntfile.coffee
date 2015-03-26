@@ -4,26 +4,19 @@ module.exports = (grunt) ->
   grunt.initConfig
     connect:
       options:
-        base: 'app'
-      dev:
+        port: 8000
+        livereload: true
+      livereload:
         options:
-          port: 8000
-          livereload: true
-        livereload:
-          options:
-            open: true
-            middleware: (connect) ->
-              [
-                connect().use(
-                  '/bower_components'
-                  connect.static './bower_components' 
-                )
-                connect.static 'app'
-              ]
-      serve:
-        options:
-          port: 1234
-          keepalive: true
+          open: true
+          middleware: (connect) ->
+            [
+              connect().use(
+                '/bower_components'
+                connect.static './bower_components' 
+              )
+              connect.static 'app'
+            ]
 
     watch:
       options:
@@ -109,6 +102,5 @@ module.exports = (grunt) ->
           dest: 'dist'
         }]
 
-  grunt.registerTask 'default', ['jade', 'scsslint', 'sass', 'coffeelint', 'coffee', 'connect:dev', 'watch']
-  grunt.registerTask 'serve', ['connect:serve']
+  grunt.registerTask 'default', ['jade', 'scsslint', 'sass', 'coffeelint', 'coffee', 'connect', 'watch']
   grunt.registerTask 'publish', ['jade', 'scsslint', 'sass', 'coffeelint', 'coffee', 'clean', 'useminPrepare', 'copy:publish', 'concat', 'cssmin', 'uglify', 'usemin']
